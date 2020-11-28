@@ -1,12 +1,16 @@
 Movie Review App
 
--User
+User
+- has_many :reviews
 
 
--User Review
+Review
+- belongs_to :user
 
+Category
+- has many users through reviews
 
--Category
-
-
--Movie
+Comment
+- belongs_to :user
+- belongs_to :review
+- text
